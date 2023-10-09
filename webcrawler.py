@@ -24,8 +24,8 @@ while len(urls) > 0 and len(opened) < maxNumUrl:
         print("Unable to access= "+curr_url)
         print(ex)
         continue    #skip code below
-
-    # IF URL OPENS, CHECK WHICH URLS THE PAGE CONTAINS
+    
+    # If URL OPENS, CHECK WHICH URLS THE PAGE CONTAINS
     # ADD THE URLS FOUND TO THE QUEUE url AND seen
     soup = BeautifulSoup(webpage)  #creates object soup
     # Put child URLs into the stack
